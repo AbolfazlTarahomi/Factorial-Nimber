@@ -3,7 +3,10 @@ function factorial(number) {
 
   for (let i = 0; i < number; i++) {
     result = result * (number - i);
-    
+
+    // 1 * (3 - 0) = 3
+    // 1 * (3 - 1) = 2
+    // 1 * (3 - 2) = 1
   }
   return result
 }
