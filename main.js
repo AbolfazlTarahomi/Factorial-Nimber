@@ -1,14 +1,22 @@
+// Recusion
+
 function factorial(number) {
   let result = 1;
 
   for (let i = 0; i < number; i++) {
     result = result * (number - i);
 
+    // Or
+    if (number === 0) {
+      return 1;
+    }
+    return number * factorial(number - 1);
+
     // 1 * (3 - 0) = 3
     // 1 * (3 - 1) = 2
     // 1 * (3 - 2) = 1
   }
-  return result
+  return result;
 }
 
 console.log(factorial(3));
